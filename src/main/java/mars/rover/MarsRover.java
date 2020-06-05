@@ -2,7 +2,16 @@ package mars.rover;
 //Peter Push
 //Leon Push
 //Matthias Push
+//Peter zweiter push
 public class MarsRover {
+
+    private int fieldx;
+    private int fieldy;
+
+    public MarsRover(int fieldx, int fieldy) {
+        this.fieldx = fieldx;
+        this.fieldy = fieldy;
+    }
 
     public static String move(int x, int y, char direction, String instructions) {
         if (!instructions.isEmpty()) {
