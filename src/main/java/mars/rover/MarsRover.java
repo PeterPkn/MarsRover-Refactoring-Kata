@@ -9,9 +9,16 @@ public class MarsRover {
     private int fieldx;
     private int fieldy;
 
-    public MarsRover(int fieldx, int fieldy) {
+    private int posX;
+    private int posY;
+    private char direction;
+
+    public MarsRover(int fieldx, int fieldy, int posX,int posY,char direction) {
         this.fieldx = fieldx;
         this.fieldy = fieldy;
+        this.posX=posX;
+        this.posY=posY;
+        this.direction=direction;
     }
 
     public static String move(int x, int y, char direction, String instructions) {
