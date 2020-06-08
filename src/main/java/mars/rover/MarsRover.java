@@ -1,9 +1,4 @@
 package mars.rover;
-//Peter Push
-//Leon Push
-//Matthias Push
-//Peter zweiter push
-//Stefan Push
 public class MarsRover {
 
     private int fieldx;
