@@ -3,7 +3,7 @@ package mars.rover;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-//Alles buugt!
+
 class MarsRoverTest {
 
     @Test
