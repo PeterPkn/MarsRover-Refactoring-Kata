@@ -47,4 +47,21 @@ class MarsRoverTest {
         String newPosition = MarsRover.move(0, 0, 'S', "MMML");
         assertEquals("0 -3 E", newPosition);
     }
+    @Test
+    public void acceptance_test_8() {
+        String newPosition = MarsRover.move(0, 0, 'S', "MMML");
+        assertEquals("0 -3 E", newPosition);
+    }
+
+    @Test
+    public void acceptance_test_9() {
+        String newPosition = MarsRover.move(0, 0, 'S', "MMML");
+        assertEquals("0 -3 E", newPosition);
+    }
+
+    @Test
+    public void acceptance_test_10() {
+        String newPosition = MarsRover.move(0, 0, 'S', "MMML");
+        assertEquals("0 -3 E", newPosition);
+    }
 }
