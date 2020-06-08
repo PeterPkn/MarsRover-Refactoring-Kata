@@ -21,7 +21,7 @@ public class MarsRover {
 
     public void setPosY(int posY) {
         if(posY>0 || posY<this.fieldy) {
-            this.posY = posX;
+            this.posY = posY;
         }
     }
 
