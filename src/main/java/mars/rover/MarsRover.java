@@ -5,12 +5,11 @@ public class MarsRover {
     private static int fieldy;
 
     public MarsRover(int fieldx, int fieldy) {
-        this.fieldx = fieldx;
-        this.fieldy = fieldy;
+        MarsRover.fieldx = fieldx;
+        MarsRover.fieldy = fieldy;
     }
 
     public static String move(int x, int y, char direction, String instructions) {
-        char ursprungsDirection = direction;
         if (!instructions.isEmpty()) {
             char instruction = instructions.charAt(0);
             switch(instruction){
