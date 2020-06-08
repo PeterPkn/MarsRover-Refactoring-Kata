@@ -17,19 +17,33 @@ class MarsRoverTest {
         String newPosition = MarsRover.move(3, 3, 'E', "MMRMMRMRRM");
         assertEquals("5 1 E", newPosition);
     }
-
-    @Test
-    public void neuePosition() {
-        String neuePosition = MarsRover.move(5, 3, 'S', "5 5");
-        assertEquals("5 3 S", neuePosition);
-    }
-
     @Test
     public void
     acceptance_test_3() {
         String newPosition = MarsRover.move(0, 0, 'S', "MMML");
         assertEquals("0 -3 E", newPosition);
     }
-
-    //Hallo
+    @Test
+    public void acceptance_test_4() {
+        String neuePosition = MarsRover.move(5, 3, 'S', "MMRM");
+        assertEquals("6 3 N", neuePosition);
+    }
+    @Test
+    public void
+    acceptance_test_5() {
+        String newPosition = MarsRover.move(0, 0, 'S', "MMML");
+        assertEquals("0 -3 E", newPosition);
+    }
+    @Test
+    public void
+    acceptance_test_6() {
+        String newPosition = MarsRover.move(0, 0, 'S', "MMML");
+        assertEquals("0 -3 E", newPosition);
+    }
+    @Test
+    public void
+    acceptance_test_7() {
+        String newPosition = MarsRover.move(0, 0, 'S', "MMML");
+        assertEquals("0 -3 E", newPosition);
+    }
 }
