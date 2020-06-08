@@ -13,12 +13,9 @@ public class MarsRover {
     private int posY;
     private char direction;
 
-    public MarsRover(int fieldx, int fieldy, int posX,int posY,char direction) {
+    public MarsRover(int fieldx, int fieldy) {
         this.fieldx = fieldx;
         this.fieldy = fieldy;
-        this.posX=posX;
-        this.posY=posY;
-        this.direction=direction;
     }
 
     public static String move(int x, int y, char direction, String instructions) {
