@@ -13,6 +13,22 @@ public class MarsRover {
         this.fieldy = fieldy;
     }
 
+    public void setPosX(int posX) {
+        if(posX>0 || posX<this.fieldx) {
+            this.posX = posX;
+        }
+    }
+
+    public void setPosY(int posY) {
+        if(posY>0 || posY<this.fieldy) {
+            this.posY = posX;
+        }
+    }
+
+    public void setDirection(char direction) {
+        this.direction = direction;
+    }
+
     public static String move(int x, int y, char direction, String instructions) {
         if (!instructions.isEmpty()) {
             char instruction = instructions.charAt(0);
