@@ -16,8 +16,8 @@ class MarsRoverTest {
     @Test
     public void acceptance_test_2DirectionTestEast() {
         MarsRover test = new MarsRover(10, 10);
-        String newPosition = MarsRover.move(3, 1, 'O', "MMMRMLLM");
-        assertEquals("3 1 O", newPosition);
+        String newPosition = MarsRover.move(3, 1, 'E', "MMMRMLLM");
+        assertEquals("6 1 N", newPosition);
     }
 
     @Test
@@ -30,8 +30,8 @@ class MarsRoverTest {
     @Test
     public void acceptance_test_4DirectionWest() {
         MarsRover test = new MarsRover(7, 7);
-        String neuePosition = MarsRover.move(5, 3, 'S', "RRRLLLMMMLM");
-        assertEquals("6 0 E", neuePosition);
+        String neuePosition = MarsRover.move(5, 3, 'W', "RRRLLLMMMLM");
+        assertEquals("2 2 S", neuePosition);
     }
 
     @Test
