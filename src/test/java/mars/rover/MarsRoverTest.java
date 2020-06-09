@@ -39,30 +39,34 @@ class MarsRoverTest {
     @Test
     public void acceptance_test_6BorderNorth() {
         MarsRover test = new MarsRover(5,5);
-        String newPosition = test.move(3, 3, 'S', "M");
-        assertEquals("3 2 S", newPosition);
+        String newPosition = test.move(3, 3, 'S', "LLMMM");
+        assertEquals("3 5 N", newPosition);
     }
 
     @Test
     public void acceptance_test_7BorderEast() {
-        String newPosition = MarsRover.move(0, 0, 'S', "MMML");
-        assertEquals("0 -3 E", newPosition);
+        MarsRover test = new MarsRover(2,2);
+        String newPosition = test.move(0, 0, 'S', "MLM");
+        assertEquals("1 0 E", newPosition);
     }
     @Test
     public void acceptance_test_8BorderSouth() {
-        String newPosition = MarsRover.move(0, 0, 'S', "MMML");
-        assertEquals("0 -3 E", newPosition);
+        MarsRover test = new MarsRover(5,5);
+        String newPosition = test.move(3, 3, 'S', "MLLRRMMM");
+        assertEquals("3 0 S", newPosition);
     }
 
     @Test
     public void acceptance_test_9BorderWest() {
-        String newPosition = MarsRover.move(0, 0, 'S', "MMML");
-        assertEquals("0 -3 E", newPosition);
+        MarsRover test = new MarsRover(2,3);
+        String newPosition = test.move(1, 1, 'S', "MRMM");
+        assertEquals("0 0 W", newPosition);
     }
 
     @Test
     public void acceptance_test_10LongTravel() {
-        String newPosition = MarsRover.move(0, 0, 'S', "MMML");
-        assertEquals("0 -3 E", newPosition);
+        MarsRover test = new MarsRover(5,5);
+        String newPosition = test.move(3, 3, 'S', "LLMMM");
+        assertEquals("3 5 N", newPosition);
     }
 }
