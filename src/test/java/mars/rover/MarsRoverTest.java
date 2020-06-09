@@ -37,30 +37,31 @@ class MarsRoverTest {
     }
 
     @Test
-    public void acceptance_test_6() {
+    public void acceptance_test_6BorderNorth() {
+        MarsRover test = new MarsRover(5,5);
+        String newPosition = test.move(3, 3, 'S', "M");
+        assertEquals("3 2 S", newPosition);
+    }
+
+    @Test
+    public void acceptance_test_7BorderEast() {
+        String newPosition = MarsRover.move(0, 0, 'S', "MMML");
+        assertEquals("0 -3 E", newPosition);
+    }
+    @Test
+    public void acceptance_test_8BorderSouth() {
         String newPosition = MarsRover.move(0, 0, 'S', "MMML");
         assertEquals("0 -3 E", newPosition);
     }
 
     @Test
-    public void acceptance_test_7() {
-        String newPosition = MarsRover.move(0, 0, 'S', "MMML");
-        assertEquals("0 -3 E", newPosition);
-    }
-    @Test
-    public void acceptance_test_8() {
+    public void acceptance_test_9BorderWest() {
         String newPosition = MarsRover.move(0, 0, 'S', "MMML");
         assertEquals("0 -3 E", newPosition);
     }
 
     @Test
-    public void acceptance_test_9() {
-        String newPosition = MarsRover.move(0, 0, 'S', "MMML");
-        assertEquals("0 -3 E", newPosition);
-    }
-
-    @Test
-    public void acceptance_test_10() {
+    public void acceptance_test_10LongTravel() {
         String newPosition = MarsRover.move(0, 0, 'S', "MMML");
         assertEquals("0 -3 E", newPosition);
     }
