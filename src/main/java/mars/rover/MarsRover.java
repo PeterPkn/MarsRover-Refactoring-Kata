@@ -10,7 +10,7 @@ public class MarsRover {
         MarsRover.fieldy = fieldy;
     }
 
-    public static String move(int x, int y, char direction, String instructions) {
+    static String move(int x, int y, char direction, String instructions) {
         if (!instructions.isEmpty()) {
             char instruction = instructions.charAt(0);
             switch (instruction) {
