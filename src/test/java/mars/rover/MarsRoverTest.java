@@ -66,7 +66,7 @@ class MarsRoverTest {
     @Test
     public void acceptance_test_10LongTravel() {
         MarsRover test = new MarsRover(5,5);
-        String newPosition = test.move(3, 3, 'S', "LLMMM");
-        assertEquals("3 5 N", newPosition);
+        String newPosition = test.move(3, 3, 'W', "MLMRMLMLMRMLMLMRMLMLM");
+        assertEquals("3 2 W", newPosition);
     }
 }
